@@ -61,9 +61,9 @@ def upload_answer(request):
                 if op.is_true:
                     if op.options == player_answer:
                         score = score + 10
-                        answer_record = answer_record + "问题%s：%s ？、正确答案：%s、 你的回答：%s 得分：%s 分\n\n " % (num, q, op.options, player_answer, "10")
+                        answer_record = answer_record + "问题%s：%s ？、 你的回答：%s 得分：%s 分\n\n " % (num, q, player_answer, "10")
                     else:
-                        answer_record = answer_record + "问题%s：%s ？、正确答案：%s、 你的回答：%s 得分：%s 分\n\n " % (num, q, op.options, player_answer, "0")
+                        answer_record = answer_record + "问题%s：%s ？、 你的回答：%s 得分：%s 分\n\n " % (num, q,  player_answer, "0")
         us, _ = User.objects.update_or_create(qq=qq)
         us.score = score
         us.answer_record = answer_record
