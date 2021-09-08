@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy MC</title>
+    <link rel="shortcut icon" href="static/images/favicon.ico" />
+    <script src="/static/js/jquery-1.11.1.min.js"></script>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" />
+    <link href="/static/css/font-awesome.css" rel="stylesheet" />
+</head>
+<body>
+<div style="border:2px #4D536C solid;">
+<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body easypiechart-panel" >
+                <div style="text-align:center; height: 35px;">
+                    <h3>查询测试结果</h3><a style="float:right" href="/" class="button">返回首页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body easypiechart-panel" >
+                <div style="text-align:center; height: 50px;">
+                    <form method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <label>QQ号：</label>{{ form.qq }}
+                        </br>
+                        <input type="submit" value="查询">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body easypiechart-panel">
+                <div style="text-align:center; height: 800px; white-space: pre-line;">
+{#                    <li>#}
+                        <h5>*** 结果 *** </h5></br>
+                        <table border="1" cellpadding="3" cellspacing="0" style="width: 60%;margin:auto">
+                            <thead>
+                                <th style="text-align:center;">玩家名</th>
+                                <th style="text-align:center;">QQ号</th>
+                                <th style="text-align:center;">开始答题时间</th>
+                                <th style="text-align:center;">答题分数</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{ results.name }}</td>
+                                    <td>{{ results.qq }}</td>
+                                    <td>{{ results.answer_time }}</td>
+                                    <td>{{ results.score }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table border="1" cellpadding="3" cellspacing="0" style="width: 60%;margin:auto">
+                            <thead>
+
+                                <th style="text-align:center;">答题结果</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{ results.answer_record }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+{#                    </li>#}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

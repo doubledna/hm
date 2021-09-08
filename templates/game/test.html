@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy MC</title>
+    <link rel="shortcut icon" href="static/images/favicon.ico" />
+    <script src="/static/js/jquery-1.11.1.min.js"></script>
+    <link href="/static/css/bootstrap.css" rel="stylesheet" />
+    <link href="/static/css/font-awesome.css" rel="stylesheet" />
+</head>
+<body>
+<div style="border:2px #4D536C solid;">
+    <div class="row">
+        <div class="col-xs-12 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body easypiechart-panel" >
+                    <div style="text-align:center; height: 35px;">
+                        <h3>开始入群测试（每题10分，满分100分，单选题，多选不得分）</h3><a style="float:right" href="/" class="button">返回首页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body easypiechart-panel" >
+                    <div style="text-align:center; height: 5000px;">
+{#                        <form method="POST" enctype="multipart/form-data">#}
+                        <form method="POST" action="/game/upload_answer/">
+                            {% csrf_token %}
+                            玩家名: <input type="text" name="name">
+                            </br>
+                            QQ号: <input type="text" name="qq">
+                            </br>
+                            </br>
+                            {% for question in questions %}
+                                <p>问题：{{ question.question }} </p>
+                                {% for answer in question.answers %}
+                                    <input type="checkbox" name="{{ question.question }}" value="{{ answer }}"> {{ answer }} </br>
+                                {% endfor %}
+                                </br>
+                            {% endfor %}
+                            </br>
+                            <input type="submit" value="提交">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

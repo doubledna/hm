@@ -11,6 +11,7 @@ class UserAdmin(admin.ModelAdmin):
     list_display = ("name", "qq", "score",)
     list_per_page = 50
     list_filter = ("name", "qq", "score",)
+    search_fields = ("name", "qq",)
 
 
 @admin.register(Question)
@@ -21,6 +22,7 @@ class QuestionAdmin(admin.ModelAdmin):
     list_display = ("question",)
     list_per_page = 50
     list_filter = ("question",)
+    search_fields = ("question",)
 
 
 @admin.register(Options)
@@ -30,7 +32,8 @@ class OptionsAdmin(admin.ModelAdmin):
     """
     list_display = ("question", "options", "is_true",)
     list_per_page = 50
-    list_filter = ("options",)
+    list_filter = ("question", "options",)
+    search_fields = ("question__question", "options",)
 
 
 @admin.register(Answer)
@@ -38,6 +41,7 @@ class AnswerAdmin(admin.ModelAdmin):
     """
     玩家回答结果
     """
-    list_display = ("user", "question", "answer",)
+    list_display = ("user", "question", "answer", "is_true")
     list_per_page = 50
     list_filter = ("user",)
+    search_fields = ("user__name",)
