@@ -31,7 +31,6 @@
                         <h5>*** 结果 *** </h5></br>
                         <table border="1" cellpadding="3" cellspacing="0" style="width: 60%;margin:auto">
                             <thead>
-
                                 <th style="text-align:center;">玩家名</th>
                                 <th style="text-align:center;">QQ号</th>
                                 <th style="text-align:center;">开始答题时间</th>
@@ -40,23 +39,20 @@
                             </thead>
                             <tbody>
                                 <tr>
-
                                     <td>{{ results.name }}</td>
                                     <td>{{ results.qq }}</td>
                                     <td>{{ results.answer_time }}</td>
                                     <td>{{ results.score }}</td>
-                                    <td>请加Q群：582242080，管理员会审核你的测试结果，期待你的加入！</td>
+                                    <td>{{ results.tips }}</td>
                                 </tr>
                             </tbody>
                         </table>
                         <table border="1" cellpadding="3" cellspacing="0" style="width: 60%;margin:auto">
                             <thead>
-
                                 <th style="text-align:center;">答题结果</th>
                             </thead>
                             <tbody>
                                 <tr>
-
                                     <td>{{ results.answer_record }}</td>
                                 </tr>
                             </tbody>

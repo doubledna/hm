@@ -77,13 +77,18 @@ def upload_answer(request):
                        "score": str(us.score),
                        "answer_time": us.answer_time,
                        "answer_record": us.answer_record}
+            if score >= 80:
+                results["tips"] = "请加Q群：582242080，管理员会审核你的测试结果，期待你的加入！"
+            else:
+                results["tips"] = "你的分数未达到80分，请重新答题！"
         else:
             current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time()))
             results = {"name": "-",
                        "qq": qq,
                        "score": "0",
                        "answer_time": current_time,
-                       "answer_record": "你没有完成首页的 '入群申请' 或输入的QQ号有误，请回到首页重新入群申请或输入正确的QQ号！"}
+                       "answer_record": "你没有完成首页的 '入群申请' 或输入的QQ号有误，请回到首页重新入群申请或输入正确的QQ号！",
+                       "tips": "你未答题，请重新答题！"}
     return render(request, 'game/upload_answer.html', {"results": results})
 
 
