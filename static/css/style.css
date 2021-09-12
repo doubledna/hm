@@ -17,7 +17,7 @@ body{
 	background:#FFFFFF;
 }
 .banner{
-	background: url(../images/1.jpg) no-repeat 0px 0px;
+	background: url(../images/1.png) no-repeat 0px 0px;
     background-size: cover;
 }
 .agileinfo-dot{
@@ -367,7 +367,7 @@ body{
     margin: 4em 0 0 0;
 }
 .w3about-img {
-    background: url(../images/2.jpg)no-repeat 0px 0px;
+    background: url(../images/2.png)no-repeat 0px 0px;
     background-size: cover;
     min-height: 30em;
     padding: 0;
