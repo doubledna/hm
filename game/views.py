@@ -32,6 +32,18 @@ def test(request):
     return render(request, 'game/test.html', {"questions": questions})
 
 
+def test2(request):
+    """入群申请"""
+    mail = "happymcclub@outlook.com"
+    huaji_bilibili = "https://b23.tv/G3xhqKk"
+    tugou_bilibili = "https://b23.tv/uQojVKx"
+    kuaishou = "https://v.kuaishou.com/pBnUZO"
+    douyin = "https://v.douyin.com/2No2ubA/"
+    xigua = "https://v.ixigua.com/2NEwq9y/"
+    aifadian = "https://afdian.net/@HAPPYMC"
+    return render(request, 'game/test2.html', {"mail": mail, "huaji_bilibili": huaji_bilibili, "tugou_bilibili": tugou_bilibili})
+
+
 def upload_answer(request):
     """上传答案，返回测试结果"""
     results = {}
