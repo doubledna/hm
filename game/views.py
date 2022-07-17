@@ -7,7 +7,38 @@ from .models import User, Question
 # Create your views here.
 def index(request):
     """首页"""
-    return render(request, 'game/index.html')
+    return render(request, 'index.html')
+
+
+def rules(request):
+    """活动"""
+    return render(request, 'rules.html')
+
+
+def staff(request):
+    """主要成员"""
+    return render(request, 'staff.html')
+
+
+def vote(request):
+    """建筑相册"""
+    return render(request, 'vote.html')
+
+
+def message_wall(request):
+    """留言墙"""
+    questions = "功能开发中..."
+    return render(request, 'message_wall.html',  {"questions": questions})
+
+
+def download(request):
+    """下载"""
+    return render(request, 'download.html')
+
+
+def join(request):
+    """加入我们"""
+    return render(request, 'join.html')
 
 
 def test(request):

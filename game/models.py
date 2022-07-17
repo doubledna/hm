@@ -61,3 +61,16 @@ class Answer(models.Model):
     class Meta:
         verbose_name = "玩家回答结果"
         verbose_name_plural = "玩家回答结果"
+
+
+class Messages(models.Model):
+    id = models.AutoField(primary_key=True)
+    message = models.CharField(unique=True, max_length=1024, verbose_name="留言")
+    message_time = models.DateTimeField(auto_now=True, verbose_name="留言时间")
+
+    def __str__(self):
+        return '%s' % (self.id,)
+
+    class Meta:
+        verbose_name = "留言"
+        verbose_name_plural = "留言"
