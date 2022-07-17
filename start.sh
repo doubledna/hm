@@ -1,0 +1,1 @@
+docker run -d --name hm_v1.1 -p 38081:38080 hm:v1.1
