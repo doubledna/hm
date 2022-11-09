@@ -1,7 +1,7 @@
 # coding=utf8
 """路由"""
 from django.urls import path
-from .views import index, test, result, upload_answer, rules, staff, vote
+from .views import index, test, result, upload_answer
 
 # create code to here
 urlpatterns = [
