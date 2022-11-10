@@ -10,19 +10,29 @@ def index(request):
     return render(request, 'home.html')
 
 
-# def rules(request):
-#     """活动"""
-#     return render(request, 'rules.html')
-#
-#
-# def staff(request):
-#     """主要成员"""
-#     return render(request, 'staff.html')
-#
-#
-# def vote(request):
-#     """建筑相册"""
-#     return render(request, 'vote.html')
+def home(request):
+    """活动"""
+    return render(request, 'home.html')
+
+
+def member(request):
+    """主要成员"""
+    return render(request, 'member.html')
+
+
+def message_board(request):
+    """留言"""
+    return render(request, 'message_board.html')
+
+
+def news(request):
+    """新闻"""
+    return render(request, 'news.html')
+
+
+def about(request):
+    """新闻"""
+    return render(request, 'about.html')
 #
 #
 # def message_wall(request):

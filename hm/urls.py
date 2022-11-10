@@ -16,12 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
-from game.views import index
+from game.views import index, home, member, message_board, news, about
 
 
 urlpatterns = [
     path("", index, name="index"),
     path("index/", index, name="index"),
+    path("home", home, name="home"),
+    path("member", member, name="member"),
+    path("message_board", message_board, name="message_board"),
+    path("news", news, name="news"),
+    path("about", about, name="about"),
     path('admin/', admin.site.urls),
     path('game/', include('game.urls'), name="game"),
     # url(r'^favicon\.ico$',RedirectView.as_view(url=r'static/img/favicon.ico')),
