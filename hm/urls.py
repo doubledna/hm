@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
-from game.views import index, home, member, message_board, news, about
+from game.views import index, home, member, project, news, about
 
 
 urlpatterns = [
@@ -24,7 +24,7 @@ urlpatterns = [
     path("index/", index, name="index"),
     path("home", home, name="home"),
     path("member", member, name="member"),
-    path("message_board", message_board, name="message_board"),
+    path("project", project, name="project"),
     path("news", news, name="news"),
     path("about", about, name="about"),
     path('admin/', admin.site.urls),

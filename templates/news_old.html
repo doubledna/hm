@@ -3,7 +3,7 @@
 
 <head>
 	<!-- 网站标题 -->
-	<title>Happy MC - Notice - 公告</title>
+	<title>Happy MC - News - 新闻</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- 网站图标 -->
@@ -20,8 +20,6 @@
 	<link rel="stylesheet" href="static/css/owl.carousel.min.css" />
 	<link rel="stylesheet" href="static/css/magnific-popup.css" />
 	<link rel="stylesheet" href="static/css/animate.css" />
-
-	<link rel="stylesheet" href="static/css/biaoti.css" />
 
 	<!-- 主样式表 -->
 	<link rel="stylesheet" href="static/css/style.css" />
@@ -46,7 +44,7 @@
 		<div class="header-warp">
 			<div class="header-bar-warp d-flex">
 				<!-- 上方的logo -->
-				<a href="{%  url 'home' %}" class="site-logo">
+				<a href="home.html" class="site-logo">
 					<img src="static/img/logo.png" alt="">
 				</a>
 				<nav class="top-nav-area w-100">
@@ -55,8 +53,8 @@
 					<ul class="main-menu primary-menu">
 						<li><a href="{%  url 'home' %}">主页</a></li>
 						<li><a href="{%  url 'member' %}">成员</a></li>
-						<li><a href="{% url 'project' %}">项目</a></li>
-						<li><a href="{%  url 'news' %}">公告</a></li>
+						<li><a href="{%  url 'message_board' %}">留言</a></li>
+						<li><a href="{%  url 'news' %}">新闻</a></li>
 						<li><a href="{%  url 'about' %}">关于</a></li>
 					</ul>
 					<!-- 上方菜单部分结束 -->
@@ -68,18 +66,9 @@
 
 
 	<!-- 大标题“news” -->
-	<!-- 弃用
-	<section class="page-top-section set-bg" data-setbg="img/page-top-bg/3.jpg">
+	<section class="page-top-section set-bg" data-setbg="static/img/page-top-bg/3.jpg">
 		<div class="page-info">
 			<h2>NEWS</h2>
-		</div>
-	</section>
-	-->
-	<section class="site-config" style="background-image:url(https://api.imlazy.ink/img/)">
-		<!-- 这使用imlazy的随机壁纸 -->
-		<div class="page-info">
-			<h2>公告</h2>
-			<p>HappyMC - NOTICE</p>
 		</div>
 	</section>
 	<!-- 大标题部分结束 -->
@@ -91,45 +80,25 @@
 			<div class="row">
 				<div class="col-xl-9 col-lg-8 col-md-7">
 					<ul class="blog-filter"></ul>
-					<!-- 顶置公告 -->
-					<div class="big-blog-item">
-						<div class="blog-content text-box text-white">
-							<h3>关于官方号视频临时停更通知</h3>
-							<p>因为内部安排比较紧，滑稽都还没来得及去做视频（众所周知 滑稽还是在校学生）所以就先停更，后面调整过来了会慢慢地恢复，所以请各位玩家先不要担心（停更并不意味着HappyMC没了）</p>
-						</div>
-					</div>
-
-					<div class="big-blog-item">
-						<div class="blog-content text-box text-white">
-							<h3>关于壁纸</h3>
-							<p>壁纸使用的是imlazy的随机壁纸api，地址<code> https://api.imlazy.ink/#/img </code></p>
-						</div>
-					</div>
-
+					<!-- 第一个新闻 -->
 					<div class="big-blog-item">
 						<div class="blog-content text-box text-white">
 							<h3>关于我们的服务器</h3>
-							<p>这次我们对服务器进行了升级（指物理上的）将运行内存增加到了32GB；使用更稳定的LINUX系统来运行游戏服务，这次我们真的可以做到百万TNT炸不崩了[切勿进服实践</p>
+							<p>我们为了增加存档个数，这次我们将服务器内存增加到了32GB；使用较为稳定的LINUX系统来运行游戏服务，这次我们真的可以做到百万TNT炸不崩了[切勿实践]</p>
 						</div>
 					</div>
-
+					<!-- 第一部分结束 -->
+					<!-- 第二部分 -->
 					<div class="big-blog-item">
 						<div class="blog-content text-box text-white">
-							<h3>新开放服务器！</h3>
-							<p>我们最近又开了一个新的服务器（喜）这个服务器只要有正版账号的玩家都可以加入，地址<code> hmc.shezhu.top </code> 兼容版本：1.19.X，进去后千万不要使用外挂哦！小心被反外挂机制制裁（笑）</p>
-						</div>
-					</div>
-
-					<div class="big-blog-item">
-						<div class="blog-content text-box text-white">
-							<h3>我们实例的管理</h3>
-							<p>MCSManager是一个很不错的服务器管理软件，支持中英语言，一直在为 Minecraft，Terraria，Steam等游戏服务器管理员，运维人员和个人开发者提供健康的软件支持</p>
+							<h3>关于我们的管理</h3>
+							<p>这次我们内部使用MCSManager面板来管理所有实例。</p>
 							<a href="https://mcsmanager.com/">
 								<p>友情链接：MCSManager | 跳转到mcsmanager.com</p>
 							</a>
 						</div>
 					</div>
-
+					<!-- 第二部分 -->
 				</div>
 			</div>
 		</div>
@@ -145,7 +114,8 @@
 			<!-- logo部分结束 -->
 			<!-- 备案信息 -->
 			<p>
-				Copyright &copy <a href="http://hmc.shezhu.top">Happy MC</a> | <a href="https://beian.miit.gov.cn" target="_blank">京ICP备2021005846号</a>
+				Copyright &copy 2021-2022 <a href="https://hmc.shezhu.top">Happy MC</a>
+				All Right Reserved. | <a href="https://beian.miit.gov.cn" target="_blank">京ICP备2021005846号</a>
 			</p>
 			<!-- 备案信息部分结束 -->
 		</div>

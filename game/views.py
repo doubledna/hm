@@ -20,9 +20,9 @@ def member(request):
     return render(request, 'member.html')
 
 
-def message_board(request):
-    """留言"""
-    return render(request, 'message_board.html')
+def project(request):
+    """项目"""
+    return render(request, 'project.html')
 
 
 def news(request):

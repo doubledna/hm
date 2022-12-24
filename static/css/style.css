@@ -5,11 +5,6 @@
  ====================================*/
 
 
-
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
-
 html,
 body {
 	height: 100%;
@@ -55,7 +50,7 @@ h6 {
 
 p {
 	font-size: 15px;
-	color: #585858;
+	color: #ffffff;
 	line-height: 1.6;
 	font-weight: 500;
 }
@@ -323,10 +318,12 @@ ol {
 .geme-social-share a:hover {
 	background: #b01ba5;
 }
-
+/*
+	这里是上方标题栏的代码- ↓ -
+*/
 .header-bar-warp {
-	background: #081624;
-	padding: 39px 40px 0;
+	background: #081624af;
+	padding: 40px 40px 0;
 	-webkit-box-shadow: 0 0 9px 3px rgba(226, 30, 228, 0.24);
 	box-shadow: 0 0 9px 3px rgba(226, 30, 228, 0.24);
 }
@@ -413,7 +410,7 @@ ol {
 }
 
 .main-menu li:hover>a:after {
-	background-image: url("../img/icons/arrow-down-color.png");
+	background-image: url("../img/icons/ar row-down-color.png");
 }
 
 .main-menu li .sub-menu {
@@ -459,129 +456,6 @@ ol {
 	display: none;
 }
 
-/*------------------
-  Hero section
----------------------*/
-
-.hero-slider .owl-dots {
-	display: -ms-flex;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	z-index: 2;
-	left: calc(50% - 740px);
-	bottom: 38px;
-	position: relative;
-	width: 1496px;
-	position: absolute;
-}
-
-.hero-slider .owl-dots .owl-dot {
-	width: 44px;
-	height: 44px;
-	border-radius: 50%;
-	font-size: 16px;
-	font-weight: 500;
-	border: 2px solid transparent;
-	color: #fff;
-	display: -ms-inline-flex;
-	display: -webkit-inline-box;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-}
-
-.hero-slider .owl-dots .owl-dot.active {
-	color: #b01ba5;
-	border: 2px solid #b01ba5;
-}
-
-.hero-slider .owl-nav {
-	margin-top: -24px;
-	display: block;
-}
-
-.hero-slider .owl-nav .owl-next {
-	position: absolute;
-	top: 50%;
-	right: 100px;
-}
-
-.hero-item {
-	height: 921px;
-	padding-top: 125px;
-	border-bottom: 2px solid #b01ba5;
-}
-
-.hero-item h2 {
-	font-size: 160px;
-	color: #fff;
-	font-weight: 500;
-	line-height: 1;
-	position: relative;
-	top: 100px;
-	opacity: 0;
-}
-
-.hero-item p {
-	font-size: 24px;
-	color: rgba(255, 255, 255, 0.4);
-	font-weight: 500;
-	opacity: 0.39;
-	margin-bottom: 70px;
-	position: relative;
-	top: 80px;
-	opacity: 0;
-}
-
-.hero-item .site-btn {
-	position: relative;
-	top: 50px;
-	opacity: 0;
-}
-
-.hero-slider .owl-item.active .hero-item h2,
-.hero-slider .owl-item.active .hero-item p,
-.hero-slider .owl-item.active .hero-item .site-btn {
-	top: 0;
-	opacity: 1;
-}
-
-.hero-slider .owl-item.active .hero-item h2 {
-	-webkit-transition: all 0.5s ease 0.4s;
-	-o-transition: all 0.5s ease 0.4s;
-	transition: all 0.5s ease 0.4s;
-}
-
-.hero-slider .owl-item.active .hero-item p {
-	-webkit-transition: all 0.5s ease 0.6s;
-	-o-transition: all 0.5s ease 0.6s;
-	transition: all 0.5s ease 0.6s;
-}
-
-.hero-slider .owl-item.active .hero-item .site-btn {
-	-webkit-transition: all 0.5s ease 0.8s;
-	-webkit-transition: all 0.5s ease 0.8s;
-	-o-transition: all 0.5s ease 0.8s;
-	transition: all 0.5s ease 0.8s;
-}
-
-.hero-slider .owl-item.active .hero-item .offer-card {
-	opacity: 1;
-	-webkit-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	transform: rotate(0deg);
-	-webkit-transition: all 0.5s ease 1s;
-	-webkit-transition: all 0.5s ease 1s;
-	-o-transition: all 0.5s ease 1s;
-	transition: all 0.5s ease 1s;
-}
-
 /* ----------------
   Intro section
 ---------------------*/
@@ -609,7 +483,14 @@ ol {
 .text-box p {
 	font-size: 15px;
 	font-weight: 500;
-	color: #68647d;
+	color: #ffffffdb;
+	margin-bottom: 35px;
+}
+
+.textp p {
+	font-size: 15px;
+	font-weight: 500;
+	color: #000000a2;
 	margin-bottom: 35px;
 }
 
@@ -630,18 +511,15 @@ ol {
 ---------------------*/
 
 .blog-section {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#501755+0,2d1854+100 */
-	background: #501755;
-	/* Old browsers */
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(45deg, #501755 0%, #2d1854 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: -o-linear-gradient(45deg, #501755 0%, #2d1854 100%);
-	background: linear-gradient(45deg, #501755 0%, #2d1854 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#501755', endColorstr='#2d1854', GradientType=1);
-	/* IE6-9 fallback on horizontal gradient */
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#55115b+0,2b125a+100 */
+	background: rgb(85,17,91); 
+	background: -moz-linear-gradient(top,  rgba(85,17,91,1) 0%, rgba(43,18,90,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(85,17,91,1) 0%,rgba(43,18,90,1) 100%);
+	background: linear-gradient(to bottom,  rgba(85,17,91,1) 0%,rgba(43,18,90,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55115b', endColorstr='#2b125a',GradientType=0 );
+
 }
+
 
 .blog-section .section-title {
 	margin-bottom: 25px;

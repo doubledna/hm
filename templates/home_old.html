@@ -20,8 +20,6 @@
 	<link rel="stylesheet" href="static/css/magnific-popup.css" />
 	<link rel="stylesheet" href="static/css/animate.css" />
 
-	<link rel="stylesheet" href="static/css/biaoti.css" />
-
 	<!-- 主要css样式 -->
 	<link rel="stylesheet" href="static/css/style.css" />
 
@@ -37,25 +35,22 @@
 		<div class="loader"></div>
 	</div>
 
-
-
 	<!-- 上方菜单栏以及logo部分 -->
 	<header class="header-section">
 		<div class="header-warp">
 			<div class="header-social d-flex justify-content-end"> </div>
 			<div class="header-bar-warp d-flex">
-
-				<!--Happy MC logo-->
+				<!-- Happy MC logo -->
 				<a href="{%  url 'home' %}" class="site-logo"> <img src="static/img/logo.png" alt=""> </a>
 				<nav class="top-nav-area w-100">
 					<!-- logo end -->
-
+					<!-- 上方菜单 -->
 					<!-- 上方菜单 -->
 					<ul class="main-menu primary-menu">
 						<li><a href="{%  url 'home' %}">主页</a></li>
 						<li><a href="{%  url 'member' %}">成员</a></li>
-						<li><a href="{% url 'project' %}">项目</a></li>
-						<li><a href="{%  url 'news' %}">公告</a></li>
+						<li><a href="{%  url 'message_board' %}">留言</a></li>
+						<li><a href="{%  url 'news' %}">新闻</a></li>
 						<li><a href="{%  url 'about' %}">关于</a></li>
 					</ul>
 					<!-- 上方菜单部分结束 -->
@@ -64,16 +59,6 @@
 		</div>
 	</header>
 	<!-- 上方菜单栏以及logo部分 结束 -->
-	<!-- https://tvax3.sinaimg.cn/large/008qLT8ggy1h6aofdeu4ij32p91o6x6u.jpg -->
-	<!--<section class="site-config" style="background-image:url(https://api.imlazy.ink/img/)">-->
-		<section class="site-config" style="background-image:url(https://easicare.seewo.com/easicare-v2/89e4bc0c35a94f38a86ec1574bd9e1a1)">
-		<!-- 这使用imlazy的随机壁纸 -->
-		<div class="page-info">
-			<h2>主页</h2>
-			<p>HappyMC - HOME</p>
-		</div>
-
-	</section>
 
 	<!-- 介绍部分 -->
 	<section class="blog-section spad">
@@ -84,7 +69,7 @@
 					<!-- 暖海基地简介 -->
 					<div class="blog-item">
 						<div class="blog-thumb">
-
+							<!-- 标记 -->
 							<img src="static/img/blog/1.png" alt="">
 						</div>
 						<div class="blog-text text-box text-white">
@@ -152,26 +137,26 @@
 			</div>
 		</div>
 	</section>
-
+	
 	<!-- 一周年视频部分结束 -->
 
 	<!-- 重点介绍土鳖庄园 -->
 	<section class="featured-section">
 		<div class="featured-bg set-bg" data-setbg="static/img/tubiezhuangyuan-bg.jpg"></div>
 		<div class="featured-box">
-			<div class="textp">
+			<div class="text-box">
 				<!--<div class="top-meta">新成员必看的景点&nbsp; / <a href="">主页&nbsp;</a></div>-->
 				<h3>特别介绍 - 土鳖庄园&nbsp;</h3>
-				<br>
-				<p>
+				<p>尽管修建的人叫它土鳖庄园，但它就真的那么“土”吗？在这里，“土鳖”似乎并“土鳖”</p>
+				<p class="">
 					土鳖庄园，座于这湿地湖中。昼日见，那一片粉墙黛瓦；暮夜望，可满城灯影繁华。有诗云"湖中望远城，灰黛瓦墙横。袅袅青烟处，霓霓夜寨空"，这说的便是那土鳖庄园也。且说这庄园如何之好，可又是谁修建的呢？且听我，细细道来。
 				</p>
-				<p>
+				<p class="">
 					相传，起初之时，这里只是一片湖泊。湖景山景林景交相辉映，好一片风水龙脉之地。后有一唤东仙，于此地设店，修起了一座木楼；如果您今天去看，依然可以看到那木楼屹立。多年也，此地已然成为一古镇。
 					然旧事相传，也无亦真亦假，就当这酒桌饭后的笑料也。 </p>
-
-				<p style='text-align:right'>编辑：Tugou_</p>
-
+				<center>
+					<p>编辑：Tugou_</p>
+				</center>
 			</div>
 		</div>
 	</section>
@@ -185,17 +170,14 @@
 			</a>
 
 			<!-- 备案信息 -->
-			<!-- 备案信息 -->
 			<p>
-				Copyright &copy <a href="http://hmc.shezhu.top">Happy MC</a> | <a href="https://beian.miit.gov.cn" target="_blank">京ICP备2021005846号</a>
+				Copyright &copy 2021-2022 <a href="http://hmc.shezhu.top">Happy MC</a>
+				All Right Reserved. | <a href="https://beian.miit.gov.cn" target="_blank">京ICP备2021005846号</a>
 			</p>
-			<!-- 备案信息部分结束 -->
 			<!-- 备案信息部分结束 -->
 		</div>
 	</footer>
-	<!-- 下方菜单栏以及备案信息部分-结束> -->
 
-	<!--====== Javascripts & Jquery ======-->
 	<script src="static/js/jquery-3.2.1.min.js"></script>
 	<script src="static/js/bootstrap.min.js"></script>
 	<script src="static/js/jquery.slicknav.min.js"></script>

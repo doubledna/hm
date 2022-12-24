@@ -21,8 +21,6 @@
 	<link rel="stylesheet" href="static/css/magnific-popup.css" />
 	<link rel="stylesheet" href="static/css/animate.css" />
 
-	<link rel="stylesheet" href="static/css/biaoti.css" />
-
 	<!-- 主css样式 -->
 	<link rel="stylesheet" href="static/css/style.css" />
 
@@ -55,8 +53,8 @@
 					<ul class="main-menu primary-menu">
 						<li><a href="{%  url 'home' %}">主页</a></li>
 						<li><a href="{%  url 'member' %}">成员</a></li>
-						<li><a href="{% url 'project' %}">项目</a></li>
-						<li><a href="{%  url 'news' %}">公告</a></li>
+						<li><a href="{%  url 'message_board' %}">留言</a></li>
+						<li><a href="{%  url 'news' %}">新闻</a></li>
 						<li><a href="{%  url 'about' %}">关于</a></li>
 					</ul>
 					<!-- 上方菜单部分结束 -->
@@ -68,22 +66,11 @@
 
 
 	<!-- 标题部分 -->
-	<!--
-	<section class="page-top-section set-bg" data-setbg="img/page-top-bg/4.jpg">
+	<section class="page-top-section set-bg" data-setbg="static/img/page-top-bg/4.jpg">
 		<div class="page-info">
 			<h2>关于我们&nbsp;</h2>
 		</div>
 	</section>
-	-->
-
-	<section class="site-config" style="background-image:url(https://api.imlazy.ink/img/)">
-		<!-- 这使用imlazy的随机壁纸 -->
-		<div class="page-info">
-			<h2>关于我们</h2>
-			<p>HappyMC - ABOUT US</p>
-		</div>
-	</section>
-
 	<!--<div class="col-lg-8"></div>-->
 	<section class="blog-section spad">
 		<div class="container">
@@ -97,8 +84,7 @@
 							<img src="./img/HM.png" alt="">
 						</div>
 						-->
-
-						<!-- 这种加入的方式太TM麻烦了，所以暂时先不用，注释掉（喜
+						
 						<div class="blog-text text-box text-white">
 							
 								<div class="top-meta">Happy MC | <a href="">加入我们 - Join us</a></div>
@@ -117,19 +103,6 @@
 							
 							
 						</div>
-						-->
-						<div class="blog-text text-box text-white">
-
-							<div class="top-meta">Happy MC | <a href="">加入我们 - Join us</a></div>
-							<p>
-								想加入我们？请联系管理员[QQ]3115350895<br>
-								<i>EMAIL</i> - &gt &nbsp <code>happymcclub@outlook.com</code>
-							</p>
-							-- 注意事项 我们不会接收网易版、基岩版、手机版等玩家！--
-
-
-						</div>
-
 					</div>
 					<!-- 跟随我们 -->
 					<div class="blog-item">
@@ -139,8 +112,8 @@
 						</div>
 						-->
 						<div class="blog-text text-box text-white">
-
-							<div class="top-meta">Happy MC | <a href="">跟随我们 - Follow us</a></div>
+							
+								<div class="top-meta">Happy MC | <a href="">跟随我们 - Follow us</a></div>
 							<p>您可以点击下方链接来找到我们的官方账号</p>
 							<!--
 							bilibili：https://b23.tv/G3xhqKk
@@ -149,24 +122,24 @@
 							西瓜视频：https://v.ixigua.com/2NEwq9y/
 							爱发电：https://afdian.net/@HAPPYMC 
 							-->
-							<a href="https://b23.tv/G3xhqKk">
-								<p> - &gt &nbsp跳转到Bilibili</p>
-							</a>
-							<a href="https://v.kuaishou.com/pBnUZO">
-								<p> - &gt &nbsp跳转到快手</p>
-							</a>
-							<a href="https://v.douyin.com/2No2ubA/">
-								<p> - &gt &nbsp跳转到抖音</p>
-							</a>
-							<a href="https://v.ixigua.com/2NEwq9y/">
-								<p> - &gt &nbsp跳转到西瓜视频</p>
-							</a>
+								<a href="https://b23.tv/G3xhqKk">
+									<p>&gt &nbsp跳转到Bilibili&nbsp &lt</p>
+								</a>
+								<a href="https://v.kuaishou.com/pBnUZO">
+									<p>&gt &nbsp跳转到快手&nbsp &lt</p>
+								</a>
+								<a href="https://v.douyin.com/2No2ubA/">
+									<p>&gt &nbsp跳转到抖音&nbsp &lt</p>
+								</a>
+								<a href="https://v.ixigua.com/2NEwq9y/">
+									<p>&gt &nbsp跳转到西瓜视频&nbsp &lt</p>
+								</a>
 
-							<a href="https://afdian.net/@HAPPYMC ">
-								<p> - &gt &nbsp跳转到爱发电</p>
-							</a>
-							<a>如果你觉得我们做得好的话，请点击“跳转到爱发电”来赞助我们！非常感谢！</a>
-
+								<a href="https://afdian.net/@HAPPYMC ">
+									<p>&gt &nbsp跳转到爱发电&nbsp &lt</p>
+								</a>
+								<a>如果你觉得我们做得好的话，请点击“跳转到爱发电”来赞助我们！非常感谢！</a>
+							
 						</div>
 					</div>
 					<!-- 跟随我们这部分结束 -->
@@ -174,7 +147,7 @@
 				<!--</div>-->
 				<!-- 关于我们这部分结束 -->
 				<!-- 下载链接 -->
-				<!-- 弃用
+				<!--
 					<div class="col-xl-3 col-lg-4 col-md-5 sidebar">
 					
 					<h1 align="center">
@@ -184,7 +157,7 @@
 					</h1>
 					</div>-->
 				<!--</div>-->
-
+				
 			</div>
 		</div>
 	</section>
@@ -200,7 +173,8 @@
 
 			<!-- 备案信息 -->
 			<p>
-				Copyright &copy <a href="http://hmc.shezhu.top">Happy MC</a> | <a href="https://beian.miit.gov.cn" target="_blank">京ICP备2021005846号</a>
+				Copyright © 2022 <a href="http://hmc.shezhu.top">Happy MC</a>
+				All Right Reserved. | <a href="https://beian.miit.gov.cn" target="_blank">京ICP备2021005846号</a>
 			</p>
 			<!-- 备案信息部分结束 -->
 		</div>
